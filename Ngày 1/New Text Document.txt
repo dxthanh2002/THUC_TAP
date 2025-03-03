@@ -1,0 +1,6 @@
+Kiểu dữ lieu nguyên thủy : Có 8 kiểu 
+Kiểu số nguyên : byte short int long
+Kiểu số thực : float double (* double lưu chính xác 15 số sau hang thập phân và lớn hơn float có 7 )
+Kiểu kí tự đơn: char
+kiểu boolean: boolean
+
