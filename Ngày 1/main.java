@@ -21,6 +21,20 @@ public class main  {
         //Boolean chỉ có True False
         String myString = "I wish I had \u00241,000,000.00";
         System.out.println(myString);
+//
+        String lastString = "10";int Int = 50;
+        System.out.println(lastString + Int);
+
+        double doubleNumber = 120.47;
+        System.out.println(lastString + doubleNumber);
+        //Operands Toán hạng
+        //int result = 1 + 2;
+        char firstChar = 'a';
+        char secondChar = 'b';
+        System.out.println(firstChar + secondChar);
+        System.out.println("" +firstChar + secondChar);
+        //  10/5 =2 ; 10%5 = 0
+
     }
 
 
