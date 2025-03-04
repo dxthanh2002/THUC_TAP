@@ -1,0 +1,2 @@
+Tên dự án viết hoa: HelloWorld
+tên hàm viết thường chu dau: getData
