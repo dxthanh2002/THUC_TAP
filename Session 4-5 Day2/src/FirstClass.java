@@ -25,7 +25,7 @@ public class FirstClass {
         // (&& AND) (|| OR)
         /* Ternary : Toán tử bậc 3 : If then else */
         String isMakeofCar = "Vol";
-        boolean isDomestic = isMakeofCar == "Vol" ? false : true;
+        boolean isDomestic = isMakeofCar == "Vol" ? true : false;
         if(isDomestic){
             System.out.println(" This car is Domestic to our country");
         }
