@@ -3,13 +3,13 @@ package BtWork;
 public class CungSoCuoi {
     public static void main(String[] args) {
         if ( hasSameLastDigit(41, 22, 71)){
-            System.out.println("true");
+            System.out.println("demo 1: true");
         }
         if ( hasSameLastDigit (23, 32, 42)){
-            System.out.println("true");
+            System.out.println("demo 2 : true");
         }
         if (hasSameLastDigit (9, 99, 999)){
-            System.out.println("true");
+            System.out.println("demo 3:true");
         }
     }
 

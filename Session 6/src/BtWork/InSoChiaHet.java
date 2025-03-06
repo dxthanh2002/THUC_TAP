@@ -2,7 +2,7 @@ package BtWork;
 
 public class InSoChiaHet {
     public static void main(String[] args) {
-        printFactors(6);
+        printFactors(32);
 
     }
     public static void printFactors(int a){

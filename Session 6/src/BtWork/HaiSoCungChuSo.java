@@ -2,10 +2,10 @@ package BtWork;
 
 public class HaiSoCungChuSo {
     public static void main(String[] args) {
-        if( hasSharedDigit(1245,7894)){
+        if( hasSharedDigit(23,32)){
                 System.out.println("Yes");
         }
-        if( hasSharedDigit(12,13)){
+        if( hasSharedDigit(124,256)){
             System.out.println("Yes");
         }
     }

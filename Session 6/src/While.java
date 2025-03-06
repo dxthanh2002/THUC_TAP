@@ -1,9 +1,6 @@
 public class While {
 
     public static void main(String[] args) {
-
-
-
         int number = 0;
         while (number < 50) {
             number += 5;
@@ -37,8 +34,6 @@ public class While {
         sum += number ;
         return sum;
     }
-
-
     /// //////////
     /// //////////
     public static boolean isEvenNumber(int number){

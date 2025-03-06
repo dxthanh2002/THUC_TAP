@@ -3,7 +3,7 @@ package BtWork;
 public class Palindromic {
     public static void main(String[] args) {
 
-        if(isPalindrome(131)){
+        if(isPalindrome(12121)){
             System.out.println("La so doi xung");
         }else {
             System.out.println("Khong doi xung");

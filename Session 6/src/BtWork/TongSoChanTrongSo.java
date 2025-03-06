@@ -2,7 +2,7 @@ package BtWork;
 
 public class TongSoChanTrongSo {
     public static void main(String[] args) {
-        System.out.println("Tong So Chan Trong So: "+getEvenDigitSum(1222));
+        System.out.println("Tong So Chan Trong So: "+getEvenDigitSum(34451));
     }
     public static int getEvenDigitSum(int number){
         if(number < 0){
