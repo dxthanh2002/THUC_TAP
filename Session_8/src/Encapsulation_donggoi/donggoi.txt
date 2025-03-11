@@ -1,0 +1,5 @@
+// Để tạo 1 class đóng gói cần phải:
+Tạo constructor chỉ thực thi với kiểu dữ liệu hợp lệ
+đặt truy cập private cho các fields
+dùng Setter 1 cách tiết kiệm hợp lí
+dùng quyền truy cập public ( k phải private ) chỉ cho 1 số methods call khi thực sự cần

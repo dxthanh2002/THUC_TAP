@@ -2,7 +2,7 @@ package BtWork;
 
 public class InSao_27 {
     public static void main(String[] args) {
-        printSquareStar(20);
+        printSquareStar(10);
     }
     public static void printSquareStar(int number) {
         if (number < 5) {

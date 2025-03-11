@@ -1,0 +1,10 @@
+Trong đa hình: Là khả năng thực hiện các hành vi khác nhau của các loại
+khác nhau trong thời gian chạy
+Không phải thay đổi subclass nếu cần
+Code có thể xử lý tất cả instances mà trả về
+giá trị ban đầu
+//
+Var ( Suy luận biến cục bộ )
+thay thế cho kiểu dữ liệu khi khai báo biến cục bộ
+//compile time: biên dịch code
+//runtime thời gian code chạy
