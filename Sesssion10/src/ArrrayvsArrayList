@@ -1,0 +1,16 @@
+//  Array
+in : toString
+binarySearch(array,element)
+arrays.sort(array)
+// ArrayList
+boolean contains(element)
+boolean containsAll( list of Element)
+int indexOf(element)
+int lastIndexOf(element)
+comparator.naturalOrder()/comparator.reverseOrder()
+////
+Memory_BigO_LinkedList
+ArrayList luôn được mở rộng bộ nhớ mỗi khi thêm phần tử mới
+BigO là ước tính chi phí của phần tử n
+có thể bao gồm bộ nhớ và độ phức tạp
+tức là cost tăng khi độ phức tạp của phần tử tăng

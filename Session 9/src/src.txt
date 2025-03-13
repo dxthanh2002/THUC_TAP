@@ -1,0 +1,12 @@
+Khi không sử dụng khai báo kiểu cho array thì tất cả array được khởi tạo với giá trị mặc định ( default )
+Kiểu nguyên thủy là 0 với các kiểu số như int,double or short
+Về boolean là false.
+Về các loại class sẽ là null
+// ý ở đây là giá trị khởi tạo mặc định của array
+
+LOOP được thiết kế để chạy các phần tử trong mảng hoặc các kiểu collection
+Nó xử lý mỗi phần tử 1 lần, từ đầu đến cuối.
+Loop nâng cao có 2 thành phần (components) cùng dấu ":", so với 3 như kiểu for cơ bản ";"
+for ( declaration : collection ) {
+
+}
