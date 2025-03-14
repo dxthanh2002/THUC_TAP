@@ -1,5 +1,6 @@
-public class Varargs {
+public class Varargs_19 {
     // Khai bao Varargs
+    //ho phép một hàm nhận một số lượng đối số không xác định.
     public static void main(String... args) {
 
         System.out.println("Hello World again");
@@ -7,13 +8,13 @@ public class Varargs {
         String[] splitStrings = "Hello World again".split(" ");
         printText(splitStrings);
 
-        System.out.println("_".repeat(20));
+        System.out.println("================");
         printText("Hello");
 
-        System.out.println("_".repeat(20));
+        System.out.println("================");
         printText("Hello", "World", "again");
 
-        System.out.println("_".repeat(20));
+        System.out.println("================");
         printText();
 
         String[] sArray = {"first", "second", "third", "fourth", "fifth"};
@@ -21,7 +22,7 @@ public class Varargs {
 
         greet("Danh sách khách mời:", "An", "Bình", "Cường");
     }
-
+    //
     private static void printText(String... textList) {
 
         for (String t : textList) {

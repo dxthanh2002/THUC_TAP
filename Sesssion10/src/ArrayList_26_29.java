@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -13,7 +14,10 @@ record GroceryItem(String name, String type, int count) {
         return String.format("%d %s in %s", count, name.toUpperCase(), type);
     }
 }
-public class ArrayList {
+
+
+
+class ArrayListdemo {
     public static void main(String[] args) {
         GroceryItem[] groceryArray = new GroceryItem[3];
         groceryArray[0] = new GroceryItem("milk");
@@ -21,11 +25,12 @@ public class ArrayList {
         groceryArray[2] = new GroceryItem("oranges", "PRODUCE", 5);
         System.out.println(Arrays.toString(groceryArray));
 
-        java.util.ArrayList objectList = new java.util.ArrayList();
+        ArrayList objectList = new ArrayList();
+        // ArrayList add set remove
         objectList.add(new GroceryItem("Butter"));
         objectList.add("Yogurt");
 
-        java.util.ArrayList<GroceryItem> groceryList = new java.util.ArrayList<>();
+        ArrayList<GroceryItem> groceryList = new ArrayList<>();
         groceryList.add(new GroceryItem("Butter"));
         groceryList.add(new GroceryItem("milk"));
         groceryList.add(new GroceryItem("oranges", "PRODUCE", 5));
@@ -40,18 +45,18 @@ public class ArrayList {
         List<String> list = List.of(items);
         System.out.println(list);
 
-        java.util.ArrayList<String> groceries = new java.util.ArrayList<>(list);
+        ArrayList<String> groceries = new ArrayList<>(list);
         groceries.add("yogurt");
         System.out.println(groceries);
 
-        java.util.ArrayList<String> nextList = new java.util.ArrayList<>(
+        ArrayList<String> nextList = new ArrayList<>(
                 List.of("pickles", "mustard", "cheese","mustard"));
         System.out.println(nextList);
 
         groceries.addAll(nextList);
         System.out.println(groceries);
 
-        ///array.contains
+        ///array.contains ( searching)
         if(groceries.contains("mustard")) {
             System.out.println("List is contain mustard");
         }
@@ -77,12 +82,13 @@ public class ArrayList {
         //.clear() xóa hết
         //.isEmpty() trả về true nếu RỖNG
         groceries.addAll(List.of("apples", "milk", "eggs", "yogurt", "pickles", "cheese", "mustard"));
+        //.sort() sắp xếp
         groceries.sort(Comparator.naturalOrder());
         System.out.println(groceries);
         groceries.sort(Comparator.reverseOrder());
         System.out.println(groceries);
         System.out.println("==========================");
-        //
+        //Copy
         var groceryArray2 = groceries.toArray(new String[groceries.size()]);
         System.out.println(Arrays.toString(groceryArray2));
     }

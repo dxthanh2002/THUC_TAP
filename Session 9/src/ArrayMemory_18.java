@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ArrayMemory {
+public class ArrayMemory_18 {
 
     public static void main(String[] args) {
 

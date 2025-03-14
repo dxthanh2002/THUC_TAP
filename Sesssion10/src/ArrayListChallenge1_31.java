@@ -2,10 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class ArrayListChallenge1 {
-
-
-
+public class ArrayListChallenge1_31 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         boolean flag = true;
