@@ -32,4 +32,5 @@ public class Main {
                 .mapToInt(s->Integer.parseInt(s.trim()))
                 .toArray();
     }
+
 }

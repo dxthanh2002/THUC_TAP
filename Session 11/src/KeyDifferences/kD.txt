@@ -1,0 +1,2 @@
+AbtractedClass giống với interface :đều không thể khởi tạo
+z khai báo không static và final
