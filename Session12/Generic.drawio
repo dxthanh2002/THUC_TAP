@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Trang-1" id="MaiOaVZe3k6xda-8tbNi">
+    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OuauVcWsb8pG3Ekw7b19-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;ArrayList&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;String&amp;gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;array" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="180" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OuauVcWsb8pG3Ekw7b19-2" value="KHÁI NIỆM:&lt;div&gt;Generics cho phép chúng ta tạo và thiết kế các lớp một cách khái quát mà không quan tâm đến các chi tiết&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="70" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OuauVcWsb8pG3Ekw7b19-3" value="Reference Type" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OuauVcWsb8pG3Ekw7b19-4" value="Type Param" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="225" y="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OuauVcWsb8pG3Ekw7b19-5" value="Variable name" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="324" y="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yvQne2tbyCdjYwG2JzVH-1" value="Khi dùng GenericClass hãy &lt;b&gt;referen &lt;/b&gt;hoặc &lt;b&gt;instantiating &lt;/b&gt;chúng&lt;br&gt;Chắc chắn cần đưa vào &lt;b&gt;TypeParam&lt;/b&gt;&lt;br&gt;Vẫn có thể sử dụng k TypeParam nếu mình dùng loại Raw Use&lt;div&gt;RawUse vẫn được sử dụng để tương thích ngược nhưng k dc khuyến khích&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Generic &lt;b&gt;cho phép&lt;/b&gt; compiler xử lý compiler-time khi &lt;b&gt;add&lt;/b&gt; và &lt;b&gt;processing&lt;/b&gt; các element trong list&lt;/div&gt;&lt;div&gt;Generic đơn giản code, không cần làm type-checking và casting nếu type element là Object&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="320" width="340" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="yvQne2tbyCdjYwG2JzVH-2" value="Extend trong class khác với extend trong Generic:&lt;br&gt;&lt;div&gt;Dùng để ràng buộc (bound) kiểu dữ liệu cho generic.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;lt;T extends Number&amp;gt;&lt;/div&gt;&lt;div&gt;nghĩa là T chỉ có thể là Number hoặc &lt;b&gt;SubType&lt;/b&gt;&amp;nbsp;of Number ( INTERGER,DOUBLE,...) không thể là String&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="70" width="290" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="yvQne2tbyCdjYwG2JzVH-4" value="Generic Type Parameters:&lt;div&gt;E for Element (used extensively by the Java Collections Framework).&lt;/div&gt;&lt;div&gt;&amp;nbsp;K for Key (used for mapped types).&lt;/div&gt;&lt;div&gt;&amp;nbsp;N for Number.&lt;/div&gt;&lt;div&gt;&amp;nbsp;T for Type.&lt;/div&gt;&lt;div&gt;&amp;nbsp;V for Value.&lt;/div&gt;&lt;div&gt;&amp;nbsp;S, U, V etc. for 2nd, 3rd, 4th types.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="320" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fgEmCTeQ4Telesknkdlv-1" value="Generic sinh ra để code ít bug hơn&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Viết code để trình dịch hiểu nếu sai Param đầu vào thì báo lỗi luôn&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="520" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TJsnklqEOLXW3M6epRM4-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="520" width="290" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
