@@ -1,4 +1,4 @@
-package Challenge;
+package Q7Challenge;
 
 public class Main2 {
 }

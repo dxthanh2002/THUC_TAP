@@ -1,0 +1,7 @@
+The Map interface has the LinkedHashMap and TreeMap classes.
+The LinkedHashMap is a key value entry collection whose keys are ordered by insertion order.
+The TreeMap is sorted by its keys, so a key needs to implement Comparable, or be initialized with a specified Comparator.
+//
+Map interface có class LinkedHashMap và TreeMap
+LinkedHashMap là key value được sap xếp theo insertion order
+The TreeMap dc sắp xếp theo key vì vậy Key cần implement Comparable hoặc dc chỉ định khởi tạo bằng Comparator

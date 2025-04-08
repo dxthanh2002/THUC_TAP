@@ -1,0 +1,7 @@
+A Set là collection k dc sắp xếp
+A Set không chứa duplicate
+A Set có thể chứa null
+A Set tính toán nhanh
+HashSet có performent tốt nhất trong SetsClass dùng trong lưu chữ bằng Hash
+Oracle mô tả là cho hiệu suất tức thời trong toán tử cơ bản ( add remove contain size )
+Big O(1)

@@ -1,0 +1,17 @@
+EnumSet and EnumMap có cách implementation khác voi HashSet or HashMap
+Có thể sử dụng List, Set , Map với Enum
+Dùng nhỏ gọn hơn và hiệu quả
+EnumSet là một implementation Set riêng biệt để sử dụng với các giá trị enum
+Tất cả các element ư trong EnumSet phải đến từ một kiểu enum duy nhất.
+
+EnumSet là trừu tượng ( abstract ) , nghĩa là chúng ta không thể khởi tạo trực tiếp.
+Nó đi kèm với nhiều factory method để tạo các instance.
+Nhìn chung, enumSet này có hiệu suất tốt hơn nhiều so với việc sử dụng HashSet với kiểu enum.
+ O(1), nếu chúng được chạy trên EnumSet và đối số của chúng là EnumSet.
+ ///////////////////////////////////////////////////////////////////////////////////////
+ EnumMap là một implementation Map riêng biệt để sử dụng với các key kiểu enum.
+ Các key phải đến từ cùng một kiểu enum và
+ chúng được sắp xếp tự nhiên theo giá trị thứ tự của các hằng số enum.
+Map này có cùng functionality như HashMap, với O(1) cho các hoạt động cơ bản.
+ Kiểu khóa enum được chỉ định trong quá trình xây dựng EnumMap, hoặc là rõ ràng bằng cách truyền lớp của kiểu khóa hoặc ngầm định bằng cách truyền EnumSet khác.
+ Nhìn chung, enumMap có hiệu suất tốt hơn so với việc sử dụng HashMap, với kiểu enum.
