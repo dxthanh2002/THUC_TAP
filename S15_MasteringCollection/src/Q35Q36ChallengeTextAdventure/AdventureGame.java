@@ -41,30 +41,33 @@ public class AdventureGame {
         if (customLocations != null) {
             loadLocations(customLocations);
         }
+        // khởi tạo gọi loadLocations
 
     }
 
     private void loadLocations(String data) {
+        //
 
         for (String s : data.split("\\R")) {
             String[] parts = s.split(",", 3);
-            Arrays.asList(parts).replaceAll(String::trim);
-            Map<Compass, String> nextPlaces = loadDirections(parts[2]);
+            Arrays.asList(parts).replaceAll(String::trim);// " road " -> "road"
+            Map<Compass, String> nextPlaces = loadDirections(parts[2]);// gọi loadDirections
             Location location = new Location(parts[1], nextPlaces);
             adventureMap.put(parts[0], location);
         }
 
     }
-
+    // chuyển String data thành object và lưu vào adventureMap
     private Map<Compass, String> loadDirections(String nextPlaces) {
 
         Map<Compass, String> directions = new HashMap<>();
         List<String> nextSteps = Arrays.asList(nextPlaces.split(","));
+        //["W: hill", " E:well house", "S:valley", "N:forest"]
 
         nextSteps.replaceAll(String::trim);
         for (String nextPlace : nextSteps) {
             String[] splits = nextPlace.split(":");
-            Compass compass = Compass.valueOf(splits[0].trim());
+            Compass compass = Compass.valueOf(splits[0].trim());// "W" ➝ Compass.W
             String destination = splits[1].trim();
             directions.put(compass, destination);
         }

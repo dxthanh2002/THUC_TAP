@@ -16,20 +16,22 @@ public class Main {
         annsDaysSet.forEach(System.out::println);
 
         var allDaysSet = EnumSet.allOf(WeekDay.class);
-        System.out.println("---------------------");
+        System.out.println("---------allOf------------");
         allDaysSet.forEach(System.out::println);
 
+        System.out.println("-----------complementOf--------");
         Set<WeekDay> newPersonDays = EnumSet.complementOf(annsDaysSet);
         System.out.println("---------------------");
         newPersonDays.forEach(System.out::println);
-
+        System.out.println("-----------removeAll--------");
         Set<WeekDay> anotherWay = EnumSet.copyOf(allDaysSet);
         anotherWay.removeAll(annsDaysSet);
         System.out.println("---------------------");
         anotherWay.forEach(System.out::println);
 
+
         Set<WeekDay> businessDays = EnumSet.range(WeekDay.MONDAY, WeekDay.FRIDAY);
-        System.out.println("---------------------");
+        System.out.println("--------range-------------");
         businessDays.forEach(System.out::println);
 
         Map<WeekDay, String[]> employeeMap = new EnumMap<>(WeekDay.class);

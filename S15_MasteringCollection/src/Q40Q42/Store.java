@@ -13,17 +13,17 @@ public class Store {
     public static void main(String[] args) {
 
         Store myStore = new Store();
-        myStore.stockStore();
-        myStore.listInventory();
+        myStore.stockStore();// Nhập vào kho (inventory HashMap)
+        myStore.listInventory();// In ds hàng
 
-        myStore.stockAisles();
-        myStore.listProductsByCategory();
+        myStore.stockAisles();//Sắp xếp sản phẩm vào kệ theo danh mục
+        myStore.listProductsByCategory();//In sản phẩm phân loại theo Category
 
-        myStore.manageStoreCarts();
-        myStore.listProductsByCategory(false, true);
+        myStore.manageStoreCarts();//tạo,add , xoá, thanh toán giỏ hàng (4 giỏ hàng)
+        myStore.listProductsByCategory(false, true);//In sản phẩm sl tồn
 
         myStore.carts.forEach(System.out::println);
-        myStore.abandonCarts();
+        myStore.abandonCarts();//trả kho
         myStore.listProductsByCategory(false, true);
         myStore.carts.forEach(System.out::println);
 
@@ -139,7 +139,7 @@ public class Store {
                 random.nextDouble(0, 1.25), 1000, 5)));
 
     }
-    // Sắp xếp sản phẩm theo danh mục
+    // Sắp xếp sản phẩm theo danh mục ( inventory -> treeMap )
     private void stockAisles() {
 
         aisleInventory = new EnumMap<>(Category.class);

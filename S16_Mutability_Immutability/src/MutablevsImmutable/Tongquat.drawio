@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Trang-1" id="qHmkVXwrNGRG9wRsASNe">
+    <mxGraphModel dx="1044" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jJGXGbOw1jqj0sP2_HWQ-1" value="&lt;b&gt;Object &lt;/b&gt;có trạng thái, là dữ liệu được lưu trữ trong các trường thể ( &lt;b&gt;fields &lt;/b&gt;).&lt;div&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp;Trạng thái ( State ) có thể &lt;b&gt;thay đổi&lt;/b&gt; sau khi Object&amp;nbsp;được tạo, có chủ ý hoặc vô ý.&lt;/div&gt;&lt;div&gt;&amp;nbsp;Khi &lt;b&gt;state&lt;/b&gt; không đổi trong suốt vòng đời của đối tượng và mã không thể thay đổi trạng thái, đối tượng này được gọi là đối tượng &lt;b&gt;immutable&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;b&gt;Immutable object&lt;/b&gt; đối tượng có trạng thái bên trong là constant.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;b&gt;Mutable object&lt;/b&gt; là đối tượng có trạng thái không có constant.&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="50" width="520" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jJGXGbOw1jqj0sP2_HWQ-2" value="Immutable Object advantage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Không bị chỉnh sửa không mong muốn&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;An toàn cho threads&amp;nbsp;&lt;br&gt;&lt;br&gt;Dùng collection an toàn ,hiệu quả hơn&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="240" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="9FRfvlnAbe2AD0uWe1nj-1" value="Immutable Object Disadvantage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Không thể thay đổi sau khi được tạo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ví dụ String vs StringBuilder ( cần thay đổi liên tục thì nên dùng StringBuilder )&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="240" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="9FRfvlnAbe2AD0uWe1nj-2" value="Immutable Object advantage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Không bị chỉnh sửa không mong muốn&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;An toàn cho threads&amp;nbsp;&lt;br&gt;&lt;br&gt;Dùng collection an toàn ,hiệu quả hơn&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="450" width="250" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

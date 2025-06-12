@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Session16.iml" filepath="$PROJECT_DIR$/Session16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/S16Mutability_Immutability.iml" filepath="$PROJECT_DIR$/S16Mutability_Immutability.iml" />
     </modules>
   </component>
 </project>

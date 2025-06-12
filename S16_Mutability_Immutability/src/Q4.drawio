@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Trang-1" id="XOU_5vqjAvi72UEaRDfu">
+    <mxGraphModel dx="1044" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="74BMwv2CynlliUVgkqmk-1" value="Vấn đề:&lt;div&gt;Side Effect&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74BMwv2CynlliUVgkqmk-3" value="Khi một đối tượng có thể thay đổi (mutable) khi truyền sang bên khác có thể bị sai ngoài ý muốn :&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;--giá trị trong object bị thay đổi bất ngờ,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;--bug khó dò,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;--vi phạm tính đóng gói (encapsulation).&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="74BMwv2CynlliUVgkqmk-5" value="Defensive Coding Techniques" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="74BMwv2CynlliUVgkqmk-6" value="Defensive Copying + Favor Immutability&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="74BMwv2CynlliUVgkqmk-7" value="Defensive Copy:&lt;br&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;2211&quot; data-start=&quot;2146&quot;&gt;&lt;td data-end=&quot;2172&quot; data-start=&quot;2146&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;Nhận vào object mutable&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/td&gt;&lt;td data-end=&quot;2211&quot; data-start=&quot;2172&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;→ Tạo copy trước khi gán vào field.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;2276&quot; data-start=&quot;2212&quot;&gt;&lt;td data-end=&quot;2236&quot; data-start=&quot;2212&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;Trả ra object mutable&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/td&gt;&lt;td data-end=&quot;2276&quot; data-start=&quot;2236&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)]&quot;&gt;→ Trả bản copy, không trả trực tiếp.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-end=&quot;2379&quot; data-start=&quot;2277&quot;&gt;&lt;td data-end=&quot;2323&quot; data-start=&quot;2277&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)] min-w-[calc(var(--thread-content-max-width)/3)]&quot;&gt;Đưa vào Collection mutable (List, Map, Set)&lt;/td&gt;&lt;td data-end=&quot;2379&quot; data-start=&quot;2323&quot; class=&quot;max-w-[calc(var(--thread-content-max-width)*2/3)] min-w-[calc(var(--thread-content-max-width)/3)]&quot;&gt;→ Copy (&lt;code data-end=&quot;2356&quot; data-start=&quot;2333&quot;&gt;new ArrayList&amp;lt;&amp;gt;(list)&lt;/code&gt; / &lt;code data-end=&quot;2376&quot; data-start=&quot;2359&quot;&gt;Map.copyOf(map)&lt;/code&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="330" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="74BMwv2CynlliUVgkqmk-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;Immutable Object&lt;/div&gt;1️⃣ Tất cả các field nên là &lt;code data-end=&quot;1437&quot; data-start=&quot;1430&quot;&gt;final&lt;/code&gt;.&lt;br data-end=&quot;1441&quot; data-start=&quot;1438&quot;&gt;&lt;br&gt;2️⃣ Không có setter.&lt;br data-end=&quot;1464&quot; data-start=&quot;1461&quot;&gt;&lt;br&gt;3️⃣ Nếu có field dạng mutable → phải &lt;strong data-end=&quot;1519&quot; data-start=&quot;1501&quot;&gt;defensive copy&lt;/strong&gt;.&lt;br data-end=&quot;1523&quot; data-start=&quot;1520&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4️⃣ Class nên được khai báo &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;1558&quot; data-start=&quot;1551&quot;&gt;final&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; (tránh bị subclass thay đổi hành vi).&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="220" y="450" width="360" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
